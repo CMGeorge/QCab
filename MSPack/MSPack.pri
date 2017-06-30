@@ -1,4 +1,6 @@
 warning($$PWD)
+INCLUDEPATH += $$PWD/mspack
+warning($$INCLUDEPATH)
 HEADERS += \
     $$PWD/mspack/cab.h \
     $$PWD/mspack/chm.h \
