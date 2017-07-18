@@ -14,7 +14,8 @@
 
 #include "system.h"
 #include "lzx.h"
-
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wsign-compare"
 /* Microsoft's LZX document (in cab-sdk.exe) and their implementation
  * of the com.ms.util.cab Java package do not concur.
  *
@@ -893,3 +894,4 @@ void lzxd_free(struct lzxd_stream *lzx) {
     sys->free(lzx);
   }
 }
+#pragma GCC diagnostic pop

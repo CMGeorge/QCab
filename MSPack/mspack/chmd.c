@@ -11,6 +11,7 @@
 
 #include "system.h"
 #include "chm.h"
+#include <string.h>
 
 /* prototypes */
 static struct mschmd_header * chmd_open(
@@ -1384,3 +1385,4 @@ static int read_off64(off_t *var, unsigned char *mem,
 #endif
     return 0;
 }
+#pragma GCC diagnostic pop

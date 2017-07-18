@@ -52,8 +52,8 @@ mac{
     HEADERS += $$PWD/osx/config.h
 }
 msvc{
-    DEFINES += HAVE_CONFIG_H
+#    DEFINES += HAVE_CONFIG_H
     INCLUDEPATH += "$$PWD/msvc/"
-    HEADERS += $$PWD/msvc/config.h
-    warning($$PWD/msvc/config.h)
+#    HEADERS += $$PWD/msvc/config.h
+#    warning($$PWD/msvc/config.h)
 }

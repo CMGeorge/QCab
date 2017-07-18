@@ -15,6 +15,7 @@
 #include "system.h"
 #include "kwaj.h"
 #include "mszip.h"
+#include <string.h>
 
 /* prototypes */
 static struct mskwajd_header *kwajd_open(

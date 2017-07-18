@@ -13,7 +13,7 @@
 
 #include "system.h"
 #include "lzss.h"
-
+#include <string.h>
 #define ENSURE_BYTES do {				\
     if (i_ptr >= i_end) {				\
 	read = system->read(input, &inbuf[0],		\
