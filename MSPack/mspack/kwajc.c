@@ -13,12 +13,12 @@
 #include "kwaj.h"
 
 struct mskwaj_compressor *
-  mspack_create_kwaj_compressor(struct mspack_system *sys)
+  mspack_create_kwaj_compressor(struct mspack_system *sys __attribute__((unused)))
 {
   /* todo */
   return NULL;
 }
 
-void mspack_destroy_kwaj_compressor(struct mskwaj_compressor *self) {
+void mspack_destroy_kwaj_compressor(struct mskwaj_compressor *self __attribute__((unused))) {
   /* todo */
 }
