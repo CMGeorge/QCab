@@ -42,3 +42,7 @@ examples/CabExtractor/.obj
 examples/CabExtractor/CabExtractor.xcodeproj
 examples/CabExtractor/Debug-iphoneos
 MSPack/lib*.prl
+MSPack/debug/
+MSPack/release/
+MSPack/object_script.MSPack.*
+examples/CabExtractor/android-libCabExtractor.so-deployment-settings.json
