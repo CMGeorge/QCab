@@ -3,15 +3,20 @@ QT -= gui
 
 CONFIG += c++11
 
-TARGET = MSPack
-#CONFIG += console
-CONFIG -= app_bundle
+#TARGET = MSPack
+TARGET = $$qt5LibraryTarget(MSPack)
 
 TEMPLATE = lib
 CONFIG  *= qt warn_on
 CONFIG  *= relative_qt_rpath
-CONFIG  *= debug_and_release
-CONFIG  *=build_all
+
+!android{
+    CONFIG *= debug_and_release
+    CONFIG *= build_all
+}else{
+    CONFIG -= debug
+    CONFIG *=release
+}
 
 PREFIX=$$[QT_INSTALL_PREFIX]
 include(MSPack.pri)
