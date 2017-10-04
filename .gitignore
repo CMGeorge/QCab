@@ -41,3 +41,4 @@ build
 examples/CabExtractor/.obj
 examples/CabExtractor/CabExtractor.xcodeproj
 examples/CabExtractor/Debug-iphoneos
+libMSPack.prl
