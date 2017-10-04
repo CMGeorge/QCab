@@ -37,3 +37,7 @@ Makefile*
 # QtCtreator CMake
 CMakeLists.txt.user*
 
+build
+examples/CabExtractor/.obj
+examples/CabExtractor/CabExtractor.xcodeproj
+examples/CabExtractor/Debug-iphoneos
