@@ -13,12 +13,12 @@
 #include "hlp.h"
 
 struct mshlp_decompressor *
-  mspack_create_hlp_decompressor(struct mspack_system *sys)
+  mspack_create_hlp_decompressor(struct mspack_system *sys __attribute__((unused)))
 {
   /* todo */
   return NULL;
 }
 
-void mspack_destroy_hlp_decompressor(struct mshlp_decompressor *self) {
+void mspack_destroy_hlp_decompressor(struct mshlp_decompressor *self __attribute__((unused))) {
   /* todo */
 }

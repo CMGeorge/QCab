@@ -13,12 +13,12 @@
 #include "szdd.h"
 
 struct msszdd_compressor *
-  mspack_create_szdd_compressor(struct mspack_system *sys)
+  mspack_create_szdd_compressor(struct mspack_system *sys __attribute__((unused)))
 {
   /* todo */
   return NULL;
 }
 
-void mspack_destroy_szdd_compressor(struct msszdd_compressor *self) {
+void mspack_destroy_szdd_compressor(struct msszdd_compressor *self __attribute__((unused))) {
   /* todo */
 }

@@ -13,12 +13,12 @@
 #include "lit.h"
 
 struct mslit_compressor *
-  mspack_create_lit_compressor(struct mspack_system *sys)
+  mspack_create_lit_compressor(struct mspack_system *sys __attribute__((unused)))
 {
   /* todo */
   return NULL;
 }
 
-void mspack_destroy_lit_compressor(struct mslit_compressor *self) {
+void mspack_destroy_lit_compressor(struct mslit_compressor *self __attribute__((unused))) {
   /* todo */
 }

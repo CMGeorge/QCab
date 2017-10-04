@@ -13,12 +13,12 @@
 #include "chm.h"
 
 struct mschm_compressor *
-  mspack_create_chm_compressor(struct mspack_system *sys)
+  mspack_create_chm_compressor(struct mspack_system *sys  __attribute__((unused)))
 {
   /* todo */
   return NULL;
 }
 
-void mspack_destroy_chm_compressor(struct mschm_compressor *self) {
+void mspack_destroy_chm_compressor(struct mschm_compressor *self  __attribute__((unused))) {
   /* todo */
 }
