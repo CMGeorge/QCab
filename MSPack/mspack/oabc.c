@@ -13,12 +13,12 @@
 #include "oab.h"
 
 struct msoab_compressor *
-  mspack_create_oab_compressor(struct mspack_system *sys __attribute__((unused)))
+  mspack_create_oab_compressor(struct mspack_system *sys)
 {
   /* todo */
   return NULL;
 }
 
-void mspack_destroy_oab_compressor(struct msoab_compressor *self __attribute__((unused))) {
+void mspack_destroy_oab_compressor(struct msoab_compressor *self) {
   /* todo */
 }

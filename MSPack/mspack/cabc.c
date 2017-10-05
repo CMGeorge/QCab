@@ -13,12 +13,12 @@
 #include "cab.h"
 
 struct mscab_compressor *
-  mspack_create_cab_compressor(struct mspack_system *sys __attribute__((unused)))
+  mspack_create_cab_compressor(struct mspack_system *sys )
 {
   /* todo */
   return NULL;
 }
 
-void mspack_destroy_cab_compressor(struct mscab_compressor *self __attribute__((unused))) {
+void mspack_destroy_cab_compressor(struct mscab_compressor *self) {
   /* todo */
 }

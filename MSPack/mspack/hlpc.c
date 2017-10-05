@@ -13,12 +13,12 @@
 #include "hlp.h"
 
 struct mshlp_compressor *
-  mspack_create_hlp_compressor(struct mspack_system *sys __attribute__((unused)))
+  mspack_create_hlp_compressor(struct mspack_system *sys)
 {
   /* todo */
   return NULL;
 }
 
-void mspack_destroy_hlp_compressor(struct mshlp_compressor *self __attribute__((unused))) {
+void mspack_destroy_hlp_compressor(struct mshlp_compressor *self) {
   /* todo */
 }

@@ -47,3 +47,6 @@ MSPack/release/
 MSPack/object_script.MSPack.*
 examples/CabExtractor/android-libCabExtractor.so-deployment-settings.json
 MSPack/MSPack.framework
+examples/CabExtractor/release/
+examples/CabExtractor/debug/
+examples/CabExtractor/.qmake.winrt_uuid_CabExtractor
