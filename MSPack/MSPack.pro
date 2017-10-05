@@ -32,19 +32,7 @@ unix:!mac {
         OBJECTS_DIR=.obj
         MOC_DIR=.moc
 
-}else:mac{
-    CONFIG+= debug_and_release
-    DESTDIR = $$[QT_INSTALL_LIBS]
-    QMAKE_FRAMEWORK_BUNDLE_NAME = $$LIB_NAME
-    export(QMAKE_FRAMEWORK_BUNDLE_NAME)
-    FRAMEWORK_HEADERS.files = $$HEADERS
-    FRAMEWORK_HEADERS.path = Headers
-    QMAKE_BUNDLE_DATA += FRAMEWORK_HEADERS
-
-    LIB_VERSION_PATH=$${LIB_NAME}.framework/Versions/1/$$TARGET
-    QMAKE_POST_LINK += install_name_tool -id @rpath/$$LIB_VERSION_PATH $$[QT_INSTALL_LIBS]/$$LIB_VERSION_PATH $$escape_expand(\\n\\t)
-#    INSTALLS+=target
-}
+}else:include(mac/mac.pri)
 
 win32 {
     headers.path=$$PREFIX/include/MSPack
@@ -56,3 +44,6 @@ win32 {
 }
 CONFIG *= install_ok  # Do not cargo-cult this!
 CONFIG *= install
+
+DISTFILES += \
+    mac/mac.pri
