@@ -46,3 +46,4 @@ MSPack/debug/
 MSPack/release/
 MSPack/object_script.MSPack.*
 examples/CabExtractor/android-libCabExtractor.so-deployment-settings.json
+MSPack/MSPack.framework

@@ -17,8 +17,9 @@ HEADERS += \
     $$PWD/mspack/readhuff.h \
     $$PWD/mspack/sha.h \
     $$PWD/mspack/system.h \
-    $$PWD/mspack/szdd.h \
-    $$PWD/msvc/config.h
+    $$PWD/mspack/szdd.h
+#\
+#    $$PWD/msvc/config.h
 
 SOURCES += \
     $$PWD/mspack/cabc.c \
@@ -47,7 +48,7 @@ SOURCES += \
 
 mac{
     INCLUDEPATH += "$$PWD/osx/"
-    HEADERS += $$PWD/osx/config.h
+#    HEADERS += $$PWD/osx/config.h
 }
 msvc{
 #    DEFINES += HAVE_CONFIG_H
