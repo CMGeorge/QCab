@@ -23,25 +23,26 @@ CONFIG  *= relative_qt_rpath
 PREFIX=$$[QT_INSTALL_PREFIX]
 include(MSPack.pri)
 target.path = $$PREFIX
-unix:!mac {
-    headers.path=$$PREFIX/include/quazip
-    headers.files=$$HEADERS
-    target.path=$$PREFIX/lib
-    INSTALLS += headers target
+#unix:!mac {
+#    headers.path=$$PREFIX/include/quazip
+#    headers.files=$$HEADERS
+#    target.path=$$PREFIX/lib
+#    INSTALLS += headers target
 
-        OBJECTS_DIR=.obj
-        MOC_DIR=.moc
+#        OBJECTS_DIR=.obj
+#        MOC_DIR=.moc
 
-}else:include(mac/mac.pri)
-
-win32 {
-    headers.path=$$PREFIX/include/MSPack
-    headers.files=$$HEADERS
-    target.path=$$PREFIX/lib
-    INSTALLS += headers target
-    # workaround for qdatetime.h macro bug
-    DEFINES += NOMINMAX
-}
+#}else:
+include(mac/mac.pri)
+include(windows/windows.pri)
+#win32 {
+#    headers.path=$$PREFIX/include/MSPack
+#    headers.files=$$HEADERS
+#    target.path=$$PREFIX/lib
+#    INSTALLS += headers target
+#    # workaround for qdatetime.h macro bug
+#    DEFINES += NOMINMAX
+#}
 CONFIG *= install_ok  # Do not cargo-cult this!
 CONFIG *= install
 
